@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- Nav Bar -->
     <header class="nav-bar">
         <div class="logo">
             <i class="fa-solid fa-utensils"></i>
@@ -16,22 +17,95 @@
         </div>
         <nav class="nav-menu">
             <ul>
-                <li><a href=""></a>오늘 뭐 먹지?</li>
-                <li><a href=""></a>Login</li>
+                <li><a href="">오늘 뭐 먹지?</a>
+                    <ul class="sub-menu">
+                        <li><a href="./recommend.html">랜덤추천</a></li>
+                        <li><a href="./form.html">카테고리별 음식</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Login</a></li>
             </ul>
         </nav>
     </header>
+    
+    <!-- Search Section -->
     <div class="container">
         <h1>Find Food Receipe</h1>
         <form id="search-form">
             <input type="text" id="search-box" placeholder="Search for the food you want">
             <button type="button" id="search-btn">Search</button>
         </form>
-    </div>   
-        <div id="search-result"></div>
+    </div>  
+    
+    <!-- Result Section --> 
+        <div id="search-result">
+            <!-- <div class="food-item">
+                <div class="food-img">
+                    <img src="food.jpg" alt="food">
+                </div>
+                <div class="food-name">
+                    <h3>Potato Chips</h3>
+                    <a href="#" class="recipe-btn">Get Recipe</a>
+                </div>
+            </div>
+            <div class="food-item">
+                <div class="food-img">
+                    <img src="food.jpg" alt="food">
+                </div>
+                <div class="food-name">
+                    <h3>Potato Chips</h3>
+                    <a href="#" class="recipe-btn">Get Recipe</a>
+                </div>
+            </div>
+            <div class="food-item">
+                <div class="food-img">
+                    <img src="food.jpg" alt="food">
+                </div>
+                <div class="food-name">
+                    <h3>Potato Chips</h3>
+                    <a href="#" class="recipe-btn">Get Recipe</a>
+                </div>
+            </div> -->
+        </div>
+        <div class="food-details">
+            <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+            <i class="fas fa-times"></i>
+            </button>
+            <div class="food-details-content">
+                <h2 class="recipe-title">Food Name</h2>
+                <p class="recipe-category">Category Name</p>
+                <div class="recipe-instruct">
+                    <h3>Instructions:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea laborum exercitationem doloremque officia totam accusamus 
+                        atque voluptatem facilis, nisi error libero nobis repudiandae 
+                        eius incidunt iusto ex minus impedit deleniti.</p>
+                </div>
+                <div class="recipe-food-img">
+                    <img src="food.jpg" alt="">
+                </div>
+                <div class="recipe-link">
+                    <a href="#" target="_blank">Watch Video</a>
+                </div>
+            </div>
+        </div>
         <button id="showmore-btn">
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-angle-down"></i>
         </button>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, nisi. Consequuntur 
+        veritatis<br> fugit laboriosam voluptatibus, molestias repudiandae consequatur rem, 
+        minus nostrum modi quo, soluta a quaerat tenetur.<br> Esse, similique sed</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </section>
 
     
 </body>
